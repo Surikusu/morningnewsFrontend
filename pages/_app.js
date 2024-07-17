@@ -29,7 +29,7 @@ const persistor = persistStore(store);
 function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor}>
+      <PersistGate loading={null} persistor={persistor}>
       <Head>
         <title>Morning News</title>
       </Head>

@@ -5,7 +5,7 @@ import styles from '../styles/Article.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { hideArticle } from '../reducers/hiddenArticles';
-
+import Link from 'next/link'
 
 function Article(props) {
 	const dispatch = useDispatch();
@@ -44,7 +44,7 @@ function Article(props) {
 	return (
 		<div className={styles.articles}>
 			<div className={styles.articleHeader}>
-				<h3>{props.title}</h3>
+				<a href={`${props.url}`} target='_blank'><h3>{props.title}</h3></a>
 				<FontAwesomeIcon onClick={() => handleBookmarkClick()} icon={faBookmark} style={iconStyle} className={styles.bookmarkIcon} />
 				{!props.isOnBookmarkPage && <FontAwesomeIcon icon = {faEyeSlash} onClick={() => handleHiddenClick()} className={styles.eyeIcon} /> }
 			</div>

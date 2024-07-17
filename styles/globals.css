@@ -7,6 +7,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Newsreader', serif;
@@ -14,15 +19,27 @@ body {
 }
 
 h2 {
+  cursor: pointer;
   font-weight: 600;
   font-size: 26px;
   margin: 0;
+}
+
+h2:hover{
+  font-weight: 600;
+	color: rgba(233, 190, 89);
 }
 
 h3 {
   font-weight: 600;
   margin: 0;
   width: 95%;
+  cursor: pointer;
+}
+
+h3:hover{
+  font-weight: 600;
+	color: rgba(233, 190, 89);
 }
 
 h4 {
