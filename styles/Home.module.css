@@ -9,3 +9,20 @@
 .sectionTitle {
 	margin-left: 25px;
 }
+
+.logoClickContainer{
+	margin-top: 10px;
+	justify-content: center;
+	display: flex;
+}
+
+.logoClick{
+	margin-left: 5px;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+.logoClick:hover{
+	opacity: 0.6;
+}
